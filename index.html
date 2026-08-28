@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𖤐 Tuan Mu Zen 𖤐• Linktree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profil -->
+        <div class="profile">
+            <img src="https://i.pravatar.cc/150?img=11" alt="Profile" class="avatar">
+            <h1>𖤐 Tuan Mu Zen 𖤐</h1>
+            <p class="bio">⛩️ Master of Digital Realm • No Filter, No Limits</p>
+        </div>
+
+        <!-- Daftar Link -->
+        <div id="linkList" class="link-list">
+            <!-- Link akan di-generate oleh JavaScript -->
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Tuan Mu Zen • All Rights Reversed</p>
+        </div>
+    </div>
+
+    <!-- Tombol Admin (Pojok Bawah) -->
+    <button id="adminBtn" class="admin-btn">⚙️</button>
+
+    <!-- Modal Admin -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🔐 Admin Panel</h2>
+            <input type="password" id="pinInput" placeholder="Masukkan PIN">
+            <button id="pinSubmit">Akses</button>
+            <div id="adminContent" style="display:none; margin-top:20px;">
+                <div id="linkManager">
+                    <!-- Form tambah link -->
+                    <h3>Tambah Link</h3>
+                    <input type="text" id="newEmoji" placeholder="Emoji (contoh: 🚀)" maxlength="2">
+                    <input type="text" id="newTitle" placeholder="Judul Link">
+                    <input type="url" id="newUrl" placeholder="URL">
+                    <button id="addLinkBtn">➕ Tambah</button>
+
+                    <!-- Daftar link yang bisa diatur -->
+                    <h3 style="margin-top:30px;">Kelola Link</h3>
+                    <div id="manageLinks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
